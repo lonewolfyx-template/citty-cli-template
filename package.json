@@ -52,6 +52,7 @@
         "picocolors": "^1.1.1",
         "simple-git-hooks": "^2.13.1",
         "tsdown": "^0.18.2",
+        "tsdown-preset": "^1.0.1",
         "tsx": "^4.21.0",
         "typescript": "^5.9.3"
     },

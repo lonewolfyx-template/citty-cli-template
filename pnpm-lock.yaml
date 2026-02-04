@@ -48,6 +48,9 @@ importers:
       tsdown:
         specifier: ^0.18.2
         version: 0.18.2(synckit@0.11.11)(typescript@5.9.3)
+      tsdown-preset:
+        specifier: ^1.0.1
+        version: 1.0.1(tsdown@0.18.2(synckit@0.11.11)(typescript@5.9.3))
       tsx:
         specifier: ^4.21.0
         version: 4.21.0
@@ -1810,6 +1813,11 @@ packages:
     resolution: {integrity: sha512-EDyGAwH1gO0Ausm9gV6T2nUvBgXT5kGoCMJPllOaooZ+4VvJiKBdZE7wK18N1deEowhcUptS+5GXZK8U/fvpwA==}
     peerDependencies:
       typescript: '>=4.0.0'
+
+  tsdown-preset@1.0.1:
+    resolution: {integrity: sha512-0SPhTnyHv4WuAE6OcgFgZoNfmtNqNUduhARfIvzclVCJvCzTCgRQkk9kh7IVuW1MEIkJdj1IjdYFhm1CsGgb4w==}
+    peerDependencies:
+      tsdown: ^0.20.1
 
   tsdown@0.18.2:
     resolution: {integrity: sha512-2o6p/9WjcQrgKnz5/VppOstsqXdTER6G6gPe5yhuP57AueIr2y/NQFKdFPHuqMqZpxRLVjm7MP/dXWG7EJpehg==}
@@ -3837,6 +3845,10 @@ snapshots:
     dependencies:
       picomatch: 4.0.3
       typescript: 5.9.3
+
+  tsdown-preset@1.0.1(tsdown@0.18.2(synckit@0.11.11)(typescript@5.9.3)):
+    dependencies:
+      tsdown: 0.18.2(synckit@0.11.11)(typescript@5.9.3)
 
   tsdown@0.18.2(synckit@0.11.11)(typescript@5.9.3):
     dependencies:
