@@ -15,8 +15,6 @@
         ".": "./dist/cli.mjs",
         "./package.json": "./package.json"
     },
-    "main": "./dist/cli.mjs",
-    "module": "./dist/cli.mjs",
     "types": "./dist/cli.d.mts",
     "bin": {
         "pkg-placeholder": "./bin/cli.js"
@@ -30,14 +28,15 @@
         "lint": "eslint",
         "lint:fix": "eslint --fix",
         "prepublishOnly": "pnpm build",
-        "prepare": "simple-git-hooks"
+        "prepare": "simple-git-hooks",
+        "test": "tsx ./src/cli.ts build -p asd --workDir 111"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org",
         "access": "public"
     },
     "dependencies": {
-        "cac": "^6.7.14",
+        "citty": "^0.2.0",
         "defu": "^6.1.4",
         "find-up": "^8.0.0",
         "glob": "^13.0.0",

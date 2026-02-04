@@ -1,13 +1,32 @@
-import cac from 'cac'
-import { name, version } from '../package.json'
+import { createMain, defineCommand } from 'citty'
+import { description, name, version } from '../package.json'
 
-const cli = cac(name)
+const command = defineCommand({
+    meta: {
+        name,
+        version,
+        description,
+    },
+    setup() {
+        console.log('Setup')
+    },
+    cleanup() {
+        console.log('Cleanup')
+    },
+    args: {
+        cwd: {
+            type: 'string',
+            description: 'Current working directory',
+            alias: 'c',
+            default: process.cwd(),
+        },
+    },
+    subCommands: {
+        build: () => import('./commands/build.ts').then(r => r.default),
+    },
+    run({ args }) {
+        console.log(args)
+    },
+})
 
-cli.command('')
-    .option('--test -t', 'arg description', { default: false })
-    .action(() => {
-    })
-
-cli.help()
-cli.version(version)
-cli.parse()
+createMain(command)({})

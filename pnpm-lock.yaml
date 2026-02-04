@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      cac:
-        specifier: ^6.7.14
-        version: 6.7.14
+      citty:
+        specifier: ^0.2.0
+        version: 0.2.0
       defu:
         specifier: ^6.1.4
         version: 6.1.4
@@ -770,6 +770,9 @@ packages:
   ci-info@4.4.0:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
     engines: {node: '>=8'}
+
+  citty@0.2.0:
+    resolution: {integrity: sha512-8csy5IBFI2ex2hTVpaHN2j+LNE199AgiI7y4dMintrr8i0lQiFn+0AWMZrWdHKIgMOer65f8IThysYhoReqjWA==}
 
   clean-regexp@1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
@@ -2609,6 +2612,8 @@ snapshots:
   character-entities@2.0.2: {}
 
   ci-info@4.4.0: {}
+
+  citty@0.2.0: {}
 
   clean-regexp@1.0.0:
     dependencies:
