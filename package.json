@@ -3,7 +3,7 @@
     "type": "module",
     "version": "0.0.0",
     "packageManager": "pnpm@10.15.1",
-    "description": "cli template use for citty tool",
+    "description": "_description_",
     "author": "lonewolfyx <olddrivero.king@qq.com>",
     "license": "MIT",
     "homepage": "https://github.com/lonewolfyx/pkg-placeholder",
