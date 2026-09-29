@@ -7,6 +7,10 @@
   "author": "lonewolfyx <olddrivero.king@qq.com>",
   "license": "MIT",
   "homepage": "https://github.com/lonewolfyx/pkg-placeholder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonewolfyx/pkg-placeholder.git"
+  },
   "bugs": {
     "url": "https://github.com/lonewolfyx/pkg-placeholder/issues"
   },
